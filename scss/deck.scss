@@ -1,0 +1,18 @@
+#deck_wrapper {
+	background: $bg_color;
+	height: $screen_h;
+	width:  $screen_w;
+	margin: 0;
+	overflow: hidden;
+	position: relative;
+}
+.slide {
+	position: absolute;
+	top:0;
+	left:0;
+	background: $bg_color;
+	height: $screen_h;
+	width:  $screen_w;
+	display: none;
+	overflow: hidden;
+}

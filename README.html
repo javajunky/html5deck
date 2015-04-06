@@ -1,0 +1,60 @@
+<h1>HTML5 Decks App</h1>
+
+<p>This is a basic HTML5 app template designed to emulate a deck of slides.</p>
+
+<h1>Requirements</h1>
+
+<ul>
+<li><a href="http://jquery.com/">jQuery</a></li>
+</ul>
+
+
+<h1>Utilizes</h1>
+
+<p>These are all optional and can be ignored.</p>
+
+<ul>
+<li><a href="http://sass-lang.com/">SCSS</a> styling</li>
+<li><a href="https://github.com/imulus/retinajs">retina.js</a></li>
+<li><a href="http://necolas.github.io/normalize.css/">normalize.css</a></li>
+<li><a href="https://github.com/ftlabs/fastclick">FastClick</a></li>
+<li><a href="http://craig.is/riding/gators">gator.js</a></li>
+<li>Eric Meyer&rsquo;s <a href="http://meyerweb.com/eric/tools/css/reset/">reset.css</a></li>
+</ul>
+
+
+<h1>Getting Started</h1>
+
+<ol>
+<li><p>Include deck before the closing <code>&lt;/body&gt;</code> tag
+ <code>html
+ &lt;script src="/path/to/deck.js"&gt;&lt;/script&gt;
+</code></p></li>
+<li><p>Include deck CSS file before the closing <code>&lt;/head&gt;</code> tag
+ <code>html
+ &lt;link rel="stylesheet" href="/path/to/deck.css"&gt;
+</code></p></li>
+<li><p>Add a wrapper <code>&lt;div&gt;</code> to the page with an ID like <code>#deck_wrapper</code>
+ <code>html
+ &lt;div id="deck_wrapper"&gt;&lt;/div&gt;
+</code></p></li>
+<li><p>Instantiate a deck object
+ <code>html
+ &lt;script&gt;
+     var mainDeck = new Deck("deck_wrapper"); // Pass in the div ID of the deck wrapper. If there is no argument, it'll default to 'deck_wrapper'.
+ &lt;/script&gt;
+</code></p></li>
+<li><p>Load your first slide. Running loadSlide without an options array will load the default values.
+ <code>html
+ &lt;script&gt;
+     var options = {
+         'name': 'home', // Name of the slide filename without the extension. Defaults to home (home.html).
+         'path': 'slides/', // Path to the slide file. Defaults to 'slides/'.
+         'new_level': false, // If set to true, the new slide will be created on top of the current slide instead of replacing it. Defaults to false.
+         'load_reset': true // If set to true, all slides will be unloaded from the deck before the new slide is loaded. Useful for a 'home' button.
+     };
+     mainDeck.loadSlide(options);
+ &lt;/script&gt;
+</code></p></li>
+</ol>
+

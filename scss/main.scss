@@ -1,0 +1,99 @@
+@import "normalize";
+// @import "reset";
+@import "typography";
+@import "variables";
+@import "retina";
+
+// $pesticide-debug: true;
+@import "pesticide";
+@import "elements";
+
+@import "deck";
+
+* {
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  	box-sizing: border-box;
+
+	/* disable text highlights */
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+
+  	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+body {
+	font-family: 'latoregular', helvetica, arial, sans-serif;
+	background: white;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'latobold', sans-serif;
+	margin-top: 24px;
+}
+#no_content {
+	display: block;
+	width: $screen_w;
+	height: $screen_h;
+	padding: $main_menu_height;
+	opacity: 0.4;
+	@include center-everything();
+}
+.menu_item {
+	display: block;
+	background: #d5e1a3;
+	display: inline-block;
+	height: $main_menu_height - 8px;
+	line-height: $main_menu_height - 8px;
+	padding: 0 20px;
+	margin: 4px 0 4px 12px;
+	cursor: pointer;
+	@include rounded(6px);
+}
+#main_menu_wrapper {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #95afba;
+	z-index: 5000;
+	width: $screen_w;
+	display: block;
+	* {
+		margin: 0;
+		padding: 0;
+	}
+	#main_menu {
+		height: $main_menu_height;
+		.menu_item {
+			margin: 4px 0 0 12px;
+			padding: 0 20px;
+		}
+	}
+}
+#deck_wrapper {
+	padding: 0 $side_padding;
+}
+button {
+	background: #53131E;
+	border: none;
+	padding: 8px 20px;
+	color: white;
+	@include rounded(4px);
+}
+.slide {
+	font-size: 14px;
+	padding: $main_menu_height 20px;
+	* {
+		margin-top: 12px;
+	}
+	pre {
+		width: 98%;
+		white-space: pre-wrap;       /* css-3 */
+		white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+		white-space: -pre-wrap;      /* Opera 4-6 */
+		white-space: -o-pre-wrap;    /* Opera 7 */
+		word-wrap: break-word;       /* Internet Explorer 5.5+ */
+	}
+}
