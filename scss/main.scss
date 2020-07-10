@@ -4,7 +4,8 @@
 @import "variables";
 @import "retina";
 
-// $pesticide-debug: true;
+$pesticide-debug-outline: false;
+$pesticide-debug-depth: false;
 @import "pesticide";
 @import "elements";
 
@@ -26,11 +27,11 @@
 }
 
 body {
-	font-family: 'latoregular', helvetica, arial, sans-serif;
+	font-family: $sans_serif;
 	background: white;
 }
 h1, h2, h3, h4, h5, h6 {
-	font-family: 'latobold', sans-serif;
+	font-family: $sans_serif;
 	margin-top: 24px;
 }
 #no_content {

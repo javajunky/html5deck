@@ -1,3 +1,14 @@
+# v0.3.0
+## October 10, 2018
+* 🚓 Added `.eslintrc.json` file
+* ⬆️ Updated [normalize.css](https://necolas.github.io/normalize.css/) to v8.0.0
+* ⬆️ Updated [jQuery](https://jquery.com) to v3.3.1
+* ✨ Added [Pesticide CSS](https://github.com/mrmrs/pesticide) v0.1.0 into repo
+* ✨ Added `_elements.scss` into repo
+* 🔥 Removed [fastclick.js](https://github.com/ftlabs/fastclick)
+* 🔥 Removed [Lato](http://www.latofonts.com/lato-free-fonts/) font
+* ✏️ Edited `README.md`
+
 # v0.2.0
 ## March 25, 2015
 * Renamed app to "HTML5 Decks App"

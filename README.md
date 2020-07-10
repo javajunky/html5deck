@@ -1,5 +1,5 @@
 # HTML5 Decks App
-This is a basic HTML5 app template designed to emulate a deck of slides. 
+This is a basic HTML5 app template designed to emulate a deck of slides.
 
 # Requirements
 * [jQuery](http://jquery.com/)
@@ -10,7 +10,6 @@ These are all optional and can be ignored.
 * [SCSS](http://sass-lang.com/) styling
 * [retina.js](https://github.com/imulus/retinajs)
 * [normalize.css](http://necolas.github.io/normalize.css/)
-* [FastClick](https://github.com/ftlabs/fastclick)
 * [gator.js](http://craig.is/riding/gators)
 * Eric Meyer's [reset.css](http://meyerweb.com/eric/tools/css/reset/)
 
