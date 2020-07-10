@@ -1,3 +1,9 @@
+# v0.3.1
+## July 10, 2020
+* ⬆️ Updated [normalize.css](https://necolas.github.io/normalize.css/) to v8.0.1
+* ⬆️ Updated [jQuery](https://jquery.com) to v3.5.1
+* 🔧 Changed `var` to `const` or `let`
+
 # v0.3.0
 ## October 10, 2018
 * 🚓 Added `.eslintrc.json` file

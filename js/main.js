@@ -1,18 +1,17 @@
 $(document).ready(function() {
-	FastClick.attach(document.body); //Instantiate FastClick
 
 	console.log('main.js loaded');
 
 	Gator(document).on('click', '.menu_item', function(e) {
-	    var this_id = $(this).attr("id");
-		var menu_id = $(this).parent().attr("id");
+	  const this_id = $(this).attr("id");
+		const menu_id = $(this).parent().attr("id");
 
 		if(menu_id === "main_menu") {
-			var opts = {
+			const opts = {
 				'path': 'slides/'
 			};
 			switch (this_id) {
-				case 'home': 
+				case 'home':
 					opts['load_reset'] = true; // reset slides
 					mainDeck.loadSlide(opts);
 					break;
@@ -53,8 +52,8 @@ $(document).ready(function() {
 });
 
 
-var mainDeck = new Deck("deck_wrapper"); // Pass in the div ID of the deck wrapper. If there is no argument, it'll default to 'deck_wrapper'.
-var options = {
+let mainDeck = new Deck("deck_wrapper"); // Pass in the div ID of the deck wrapper. If there is no argument, it'll default to 'deck_wrapper'.
+const options = {
 	'name': 'home', // Name of the slide filename without the extension. Defaults to home (home.html).
 	'path': 'slides/', // Path to the slide file. Defaults to 'slides/'.
 	'new_level': false // If set to true, the new slide will be created on top of the current slide instead of replacing it. Defaults to false.

@@ -44,11 +44,11 @@ Deck.prototype = {
         }
 
         /* default values */
-        var load_filename = 'home';
-        var load_path = 'slides/';
-        var load_index = -1;
-        var load_level_id = 'slide_level_0';
-        var load_new_level = false;
+        let load_filename = 'home';
+        let load_path = 'slides/';
+        let load_index = -1;
+        let load_level_id = 'slide_level_0';
+        let load_new_level = false;
 
         /* if there are no slides, new_level is automatically set to true */
         if (this.slides.length == 0) {
@@ -78,9 +78,9 @@ Deck.prototype = {
 
         load_level_id = 'slide_level_' + load_index;
 
-        var _deck = this;
+        const _deck = this;
 
-        var loadDivExists = ($("#" + load_level_id).length == 1);
+        let loadDivExists = ($("#" + load_level_id).length == 1);
         if (!loadDivExists) {
             $(this.wrapper).append("<div class='slide' id='" + load_level_id + "'></div>");
         }
@@ -121,7 +121,7 @@ Deck.prototype = {
             $(".slide").addClass('disabled'); // add disabled class to all slides
             /* Load html into slide */
             $(this).load(load_path + load_filename + ".html", function(response, status, xhr) {
-                var load_time = 800;
+                const load_time = 800;
                 if (status === "error") {
                     console.log("error loading " + load_filename + ", " + xhr.status + " " + xhr.statusText);
                     $("#slide_level_0").load("slides/home.html", function() {
@@ -181,7 +181,7 @@ Deck.prototype = {
             return false; // no slide to unload
         }
 
-        var unload_level_id = "slide_level_" + unload_index;
+        const unload_level_id = "slide_level_" + unload_index;
 
         /* handle emptying and removing of slide */
         /* Clean up videos */
@@ -210,7 +210,7 @@ Deck.prototype = {
     },
     printData: function() {
         console.log('printData');
-        var message = JSON.stringify(this);
+        let message = JSON.stringify(this);
         message += "\nthis.currentSlideIndex: " + this.currentSlideIndex;
         console.log(message);
     },

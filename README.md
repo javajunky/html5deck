@@ -32,14 +32,14 @@ These are all optional and can be ignored.
 4. Instantiate a deck object
 	``` html
 	<script>
-		var mainDeck = new Deck("deck_wrapper"); // Pass in the div ID of the deck wrapper. If there is no argument, it'll default to 'deck_wrapper'.
+		let mainDeck = new Deck("deck_wrapper"); // Pass in the div ID of the deck wrapper. If there is no argument, it'll default to 'deck_wrapper'.
 	</script>
 	```
 
 5. Load your first slide. Running loadSlide without an options array will load the default values.
 	``` html
 	<script>
-		var options = {
+		const options = {
 			'name': 'home', // Name of the slide filename without the extension. Defaults to home (home.html).
 			'path': 'slides/', // Path to the slide file. Defaults to 'slides/'.
 			'new_level': false, // If set to true, the new slide will be created on top of the current slide instead of replacing it. Defaults to false.
